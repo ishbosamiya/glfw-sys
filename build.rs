@@ -38,5 +38,5 @@ fn main() {
         "cargo:rustc-link-search=native={}",
         dst.join("lib").display()
     );
-    println!("cargo:rustc-link-lib=dylib=glfw3");
+    println!("cargo:rustc-link-lib=static=glfw3");
 }
